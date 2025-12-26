@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hammerheads Seafood</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xgj1wyx.css">
+
+</head>
+<body>
+
+    <header class="initial-header">
+        <div class="nav-container">
+            <div class="logo" onclick="window.scrollTo(0,0)"><img src="hammerheads-test-logo.png"></img></div>
+            <ul class="nav-links" id="initial-menu">
+                <div class="nav-group">
+                    <li><a href="#location">LOCATION</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                </div>
+                <div class="nav-group">
+                    <li><a href="#specials">SPECIALS</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                </div>
+            </ul>
+        </div>
+    </header>
+
+    <div id="hero">
+    </div>
+
+    <button class="menu-trigger" onclick="toggleMenu()" id="menuBtn">
+    <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+    </span>
+</button>
+
+    <header class="sticky-header" id="sticky-nav">
+        <div class="nav-container">
+            <button class="hamburger" onclick="toggleMenu('sticky-menu')">☰</button>
+            <ul class="nav-links" id="sticky-menu">
+                <div class="nav-group">
+                    <li><a href="#location">LOCATION</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#specials">SPECIALS</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                </div>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="location">
+            <div class="location-container">
+        <div class="location-info">
+            <h1>LOCATION</h1>
+            <p><strong>Hammerheads Seafood and Sports Grille</strong></p>
+            <p>415 Peachtree Industrial Blvd</p>
+            <p>Suwanee, GA 30024</p>
+            <br>
+             <p><strong>Phone: </strong><a href="tel:+17709453570">770.945.3570</a></p>
+<p><strong>Fax: </strong><a href="tel:+17709453970">770.945.3970</a></p>
+<p><strong>Email: </strong><a href="mailto:office@hammerheadsseafood.com">office@hammerheadsseafood.com</a></p>
+
+</div>
+
+        <div class="location-map">
+           <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.8617830155793!2d-84.07223742352885!3d34.04740261798314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5970e6b7785f1%3A0x1f201a85b0928db1!2sHammerheads%20Seafood%20and%20Sports%20Grille!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus" 
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+        </div>
+    </div>
+        </section>
+
+<section id="menu" style="padding-inline: 0px;">
+    <h1 class="menu-header">MENU</h1>
+    <div class="menu-container">
+        
+        <div class="menu-carousel">
+            <button class="menu-prev" onclick="changeMenu()">&#10094;</button>
+            <div class="menu-track" id="menuTrack">
+                <div class="menu-page"><img src="page1.png" alt="Menu Page 1"></div>
+                <div class="menu-page"><img src="page2.png" alt="Menu Page 2"></div>
+            </div>
+            <button class="menu-next" onclick="changeMenu()">&#10095;</button>
+        </div>
+
+        <div class="menu-thumbnails">
+            <div class="thumb active-thumb" onclick="changeMenu(0)">
+                <img src="page1.png" alt="Thumb 1">
+            </div>
+            <div class="thumb" onclick="changeMenu(1)">
+                <img src="page2.png" alt="Thumb 2">
+            </div>
+        </div>
+
+        <div class="pdf-download">
+            <br><p>Download printable menu 
+            <a href="Hammerheads+Menu+1-24-25.pdf" target="_blank" >
+                here.
+            </a></p>
+        </div>
+    </div>
+</section>
+        <section id="specials"><h1>WEEKLY SPECIALS</h1>
+        
+        <p><strong>Monday: </strong>1/2 Priced Wings, Oysters & Shrimp (excluding baskets and platters) from 4:00pm to Close.</p>
+<p><strong>Tuesday: </strong>Team Trivia at 7:30pm</p>
+<p><strong>Thursday: </strong>Team Trivia at 7:30pm</p>
+<p><strong>Friday: </strong>Live Music from 6:00pm to 9:00pm & DJ at 9:00pm</p>
+<p ><strong>Saturday: </strong>DJ at 9:00pm</p>
+<p ><strong>All Day, Every Day: </strong><br>Hammerheads House Draft (Miller High Life) $3.49 Pint & $9.95 Pitcher                                        
+<br>Fireball or Jack Fire Shots (1oz)  $3.00
+<br>Skrewball Peanut Butter Whiskey Shots (1oz) $4.00</p>
+
+</section>
+        <section id="gallery" style="padding: 0; overflow: hidden;">
+    <div class="carousel-container">
+        <button class="carousel-prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="carousel-next" onclick="moveSlide(1)">&#10095;</button>
+
+        <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-item"><img src="pic1.jpg" alt="Gallery 1"></div>
+            <div class="carousel-item"><img src="pic2.jpg" alt="Gallery 1"></div>
+            <div class="carousel-item"><img src="pic3.jpg" alt="Gallery 1"></div>
+            <div class="carousel-item"><img src="pic4.jpg" alt="Gallery 1"></div>
+            <div class="carousel-item"><img src="pic5.jpg" alt="Gallery 1"></div>
+            <div class="carousel-item"><img src="pic6.jpg" alt="Gallery 1"></div>
+            <div class="carousel-item"><img src="pic7.jpg" alt="Gallery 1"></div>
+            <div class="carousel-item"><img src="pic8.jpg" alt="Gallery 1"></div>
+            <div class="carousel-item"><img src="pic9.jpg" alt="Gallery 1"></div>
+            <div class="carousel-item"><img src="pic10.jpg" alt="Gallery 1"></div>
+            <div class="carousel-item"><img src="pic11.jpg" alt="Gallery 1"></div>
+        </div>
+    </div>
+</section>
+                <section id="footer">
+
+             <a style="font-family: 'raleway'; font-size: smaller;letter-spacing: 2px;line-height: 2.6em;" onclick="window.scrollTo(0,0)">BACK TO TOP</a>
+            <br><br><p>415 Peachtree Industrial Blvd<br>Suwanee, GA 30024</p>
+            <br>
+             <p><a href="tel:+17709453570">770.945.3570</a><br><a href="mailto:office@hammerheadsseafood.com">office@hammerheadsseafood.com</a></p>
+                </section>
+
+                <div class="mobile-overlay" id="mobileOverlay">
+    <a href="#location" onclick="toggleMenu()">Location</a>
+    <a href="#menu" onclick="toggleMenu()">Menu</a>
+    <a href="#specials" onclick="toggleMenu()">Specials</a>
+    <a href="#gallery" onclick="toggleMenu()">Gallery</a>
+</div>
+    </main>
+
+    <script>
+        const stickyNav = document.getElementById('sticky-nav');
+        const locationSection = document.getElementById('location');
+        const allLinks = document.querySelectorAll('.nav-links a');
+        const sections = document.querySelectorAll('section');
+
+        // Toggle Sticky Header visibility
+        window.addEventListener('scroll', () => {
+            const triggerPoint = locationSection.offsetTop - 50;
+            if (window.scrollY >= triggerPoint) {
+                stickyNav.classList.add('visible');
+            } else {
+                stickyNav.classList.remove('visible');
+            }
+        });
+
+        // Scrollspy: Highlight current section
+        const observerOptions = { threshold: 0.6 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    allLinks.forEach(link => {
+                        link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(s => observer.observe(s));
+
+        // Mobile Menu Function
+        function toggleMenu(menuId) {
+            document.getElementById(menuId).classList.toggle('mobile-open');
+        }
+
+        // Close mobile menu on click
+        allLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelectorAll('.nav-links').forEach(nav => nav.classList.remove('mobile-open'));
+            });
+        });
+
+        function toggleMenu() {
+    const overlay = document.getElementById('mobileOverlay');
+    const btn = document.getElementById('menuBtn');
+    
+    // Toggle the classes
+    overlay.classList.toggle('is-active');
+    btn.classList.toggle('is-active');
+    
+    // Optional: Prevent the background from scrolling when menu is open
+    if (overlay.classList.contains('is-active')) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = 'auto';
+    }
+}
+
+let currentSlide = 0;
+const track = document.getElementById('carouselTrack');
+const slides = document.querySelectorAll('.carousel-item');
+const totalSlides = slides.length;
+
+function updateCarousel() {
+    let totalOffset = 0;
+    const containerWidth = document.querySelector('.carousel-container').offsetWidth;
+    const totalTrackWidth = Array.from(slides).reduce((acc, slide) => acc + slide.offsetWidth, 0);
+
+    // Loop through all slides up to the current one
+    // and add their widths together
+    for (let i = 0; i < currentSlide; i++) {
+        totalOffset += slides[i].offsetWidth;
+    }
+
+    // --- THE FIX ---
+    // The furthest we can ever scroll is (Total Width - Container Width)
+    const maxScroll = totalTrackWidth - containerWidth;
+
+    // If the calculated offset is further than the maxScroll, 
+    // we "clamp" it to the maxScroll so the last photo stays right-aligned.
+    if (totalOffset > maxScroll) {
+        totalOffset = maxScroll;
+    }
+
+    // Apply the cumulative width as the transform
+    track.style.transform = `translateX(-${totalOffset}px)`;
+}
+
+function moveSlide(direction) {
+    currentSlide += direction;
+
+    // Boundary logic: Stop at the last image or loop
+    if (currentSlide >= totalSlides) {
+        currentSlide = 0;
+    } else if (currentSlide < 0) {
+        currentSlide = totalSlides - 1;
+    }
+    
+    updateCarousel();
+    resetTimer();
+}
+
+// Ensure the carousel recalculates if the window is resized
+window.addEventListener('resize', updateCarousel);
+
+// Automatic Scroll (Optional - you can remove this if you want it purely manual)
+let autoScroll = setInterval(() => { moveSlide(1); }, 4000);
+
+function resetTimer() {
+    clearInterval(autoScroll);
+    autoScroll = setInterval(() => { moveSlide(1); }, 4000);
+}
+
+let currentMenu = 0;
+function changeMenu(index) {
+    if (index== null) {
+    if (currentMenu == 0) {
+        index =1;
+    } else {
+          index =0;
+    }
+}
+currentMenu = index;
+    const track = document.getElementById('menuTrack');
+    const thumbs = document.querySelectorAll('.thumb');
+    
+    // Move the carousel
+    track.style.transform = `translateX(-${index * 100}%)`;
+    
+    // Update active thumbnail
+    thumbs.forEach(t => t.classList.remove('active-thumb'));
+    thumbs[index].classList.add('active-thumb');
+}
+    </script>
+</body>
+</html>
